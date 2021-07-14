@@ -1,15 +1,184 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="scroll-padding-top: 92px;">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
 
     <title>Página Bootstrap Jorge Mitri</title>
   </head>
   <body>
 
+    <nav class="navbar navbar-expand-lg fixed-top px-5 py-3 navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex gap-3 align-items-center" href="#">
+          <img src="./assets/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          <span>Flyby</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plans">Planes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lugares
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Playas</a></li>
+                  <li><a class="dropdown-item" href="#">Montañas</a></li>
+                  <li><a class="dropdown-item" href="#">Bosques</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" style="min-height: 100vh;" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" style="min-width: 100%;max-height: 100vh;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="p-2 mb-2">Playas</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1624916888948-7015aa2b25b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" style="min-width: 100%;max-height: 100vh;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="p-2 mb-2">Montañas</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1450&q=80" style="min-width: 100%;max-height: 100vh;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="p-2 mb-2">Bosques</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="container py-5 my-5 d-flex gap-5" id="about">
+      <div class="d-flex justify-content-center flex-column">
+        <h3 class="mb-5 text-center text-uppercase" style="letter-spacing: 1px;">Sobre Nosotros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, natus! Inventore temporibus architecto, eius ratione placeat culpa quod eveniet optio maxime ipsum enim nostrum. Tempore natus minima necessitatibus inventore voluptates.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="">
+      </div>
+    </section>
+    
+    <section class="container py-5 my-5" id="testimonials">
+      <h3 class="mb-5 text-center text-uppercase" style="letter-spacing: 1px;">Testimonios</h3>
+      <div class="row gx-5">
+        <div class="col">
+          <div class="d-block w-100 mb-4 d-flex justify-content-center">
+            <img src="./assets/testimonios/alicia.jpg" height="100px" width="100px" style="border-radius: 50%;" alt="">
+          </div>
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque itaque.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-center mt-4">
+              Alicia Gomez
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="d-block w-100 mb-4 d-flex justify-content-center">
+            <img src="./assets/testimonios/jose.jpg" height="100px" width="100px" style="border-radius: 50%;" alt="">
+          </div>
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-center mt-4">
+              Jose Perez
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <div class="d-block w-100 mb-4 d-flex justify-content-center">
+            <img src="./assets/testimonios/simon.jpg" height="100px" width="100px" style="border-radius: 50%;" alt="">
+          </div>
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo nihil sunt.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-center mt-4">
+              Simon Rodriguez
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5 my-5" id="plans">
+      <h3 class="mb-5 text-center text-uppercase" style="letter-spacing: 1px;">Planes</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/planes/basico.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center my-4 fw-bold">Plan Vacacional Básico</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus eos totam neque nulla amet autem culpa ipsam.</p>
+                <button class="btn btn-primary mt-3 w-100">Elegir</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/planes/estandar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center my-4 fw-bold">Plan Vacacional Estándar</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus eos totam neque nulla amet autem culpa ipsam.</p>
+                <button class="btn btn-primary mt-3 w-100">Elegir</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/planes/lujo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center my-4 fw-bold">Plan Vacacional de Lujo</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus eos totam neque nulla amet autem culpa ipsam.</p>
+                <button class="btn btn-primary mt-3 w-100">Elegir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cansado de estar en casa? -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
